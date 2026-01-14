@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Si utilizas este código, por favor cítalo como se indica a continuación."
+authors:
+  - family-names: "Caro Retamozo"
+    given-names: "Sebastian A."
+title: "Código de Análisis de Supervivencia para Tesis de LLA"
+version: 1.0.0
+date-released: 2024-05-20
+url: ""
