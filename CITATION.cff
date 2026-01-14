@@ -1,9 +1,11 @@
 cff-version: 1.2.0
-message: "Si utilizas este código, por favor cítalo como se indica a continuación."
+message: "If you use this software, please cite it as below."
 authors:
-  - family-names: "Caro Retamozo"
-    given-names: "Sebastian A."
-title: "Código de Análisis de Supervivencia para Tesis de LLA"
+- family-names: "Caro Retamozo"
+  given-names: "Sebastian"
+  orcid: "https://orcid.org/my-orcid?orcid=0009-0009-9690-6328"
+title: "tesis-survival-analysis"
 version: 1.0.0
-date-released: 2024-05-20
-url: ""
+doi: 10.5281/zenodo.1234
+date-released: 2026-01-13
+url: "https://github.com/scaro23/tesis-survival-analysis"
