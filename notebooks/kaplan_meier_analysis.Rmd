@@ -1,3 +1,8 @@
+---
+title: "Kaplan-Meier Survival Analysis"
+author: "Sebastian Caro"
+output: html_document
+---
 ## Kaplan–Meier Survival Analysis
 
 We estimated survival curves using the Kaplan–Meier estimator.
