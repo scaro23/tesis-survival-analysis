@@ -1,10 +1,12 @@
 cff-version: 1.2.0
+type: software
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Caro Retamozo"
   given-names: "Sebastian"
-  orcid: "https://orcid.org/my-orcid?orcid=0009-0009-9690-6328"
-title: "tesis-survival-analysis"
+  orcid: "https://orcid.org/0009-0009-9690-6328"
+title: "Survival Analysis Pipeline for Clinical Data (Kaplan-Meier and Cox Models)"
 version: 1.0.0
 date-released: 2026-01-13
 url: "https://github.com/scaro23/tesis-survival-analysis"
+abstract: "R scripts and notebooks used in a bachelor's thesis for survival analysis, including Kaplan-Meier estimation and Cox proportional hazards modeling."
