@@ -19,5 +19,5 @@ Due to patient privacy restrictions, the dataset used in this study is not publi
 ## Citation
 If you use this repository, please cite:
 Caro Retamozo, S. (2026). 
-Survival Analysis Pipeline for Pediatric B-Cell Acute Lymphoblastic Leukemia (Kaplan-Meier and Cox Models) 
+Survival Analysis Pipeline for B-Cell Acute Lymphoblastic Leukemia (Kaplan-Meier and Cox Models) 
 (Version 1.0.2). Zenodo. https://doi.org/10.5281/zenodo.19260913
