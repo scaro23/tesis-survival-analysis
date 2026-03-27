@@ -13,3 +13,14 @@ The following visualization tools were used in the analysis:
 1. Interactive tables created with the `DT` package.
 2. Box-and-whisker plots to summarize the distribution of continuous variables.
 3. Kaplan–Meier survival curves customized using the `survminer` package.
+## Reproducibility
+All analyses were conducted in R. Required packages include:
+- survival
+- survminer
+- DT
+Session information can be provided upon request.
+## Data Availability
+Due to patient privacy restrictions, the dataset used in this study is not publicly available.
+## Citation
+If you use this repository, please cite:
+Caro Retamozo, S. (2026). *Survival Analysis Pipeline for Clinical Data (Kaplan-Meier and Cox Models)* (Version 1.0.2). Zenodo. https://doi.org/10.5281/zenodo.19260913
