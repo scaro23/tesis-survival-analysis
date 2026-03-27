@@ -5,7 +5,7 @@ authors:
 - family-names: "Caro Retamozo"
   given-names: "Sebastian"
   orcid: "https://orcid.org/0009-0009-9690-6328"
-title: "Survival Analysis Pipeline for Clinical Data (Kaplan-Meier and Cox Models)"
+title: "Survival Analysis Pipeline for B-Cell Acute Lymphoblastic Leukemia (Kaplan-Meier and Cox Models)"
 version: 1.0.0
 date-released: 2026-01-13
 url: "https://github.com/scaro23/tesis-survival-analysis"
