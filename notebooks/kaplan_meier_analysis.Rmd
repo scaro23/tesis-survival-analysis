@@ -1,0 +1,13 @@
+## Kaplan–Meier Survival Analysis
+
+We estimated survival curves using the Kaplan–Meier estimator.
+
+```r
+fit_km <- survfit(Surv_EFS ~ gene_fusion, data = my_data)
+```
+
+The survival curves were visualized using `survminer`.
+
+```r
+ggsurvplot(fit_km)
+```
