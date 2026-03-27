@@ -13,7 +13,7 @@ All analyses were conducted in R. Required packages include:
 - survival
 - survminer
 - DT
-Session information can be provided upon request.
+Session information (R version and package versions) can be provided upon request.
 ## Data Availability
 Due to patient privacy restrictions, the dataset used in this study is not publicly available.
 ## Citation
