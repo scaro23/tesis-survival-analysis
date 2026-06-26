@@ -1,62 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>B-ALL Survival Analysis</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    max-width:900px;
-    margin:auto;
-    padding:40px;
-}
-
-h1{
-    color:#1565C0;
-}
-
-.card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    padding:20px;
-    margin:15px 0;
-}
-
-a{
-    text-decoration:none;
-    color:#1565C0;
-    font-weight:bold;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Caro | Portafolio de Análisis de Datos</title>
+    <!-- Tailwind CSS para un diseño moderno y rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para iconos limpios -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Color marino personalizado para emparejar con el tema del notebook */
+        .bg-navy-deep { background-color: #1a365d; }
+        .text-navy-deep { color: #1a365d; }
+        .border-navy-deep { border-color: #1a365d; }
+        .hover-bg-navy:hover { background-color: #2b5c8f; }
+    </style>
 </head>
+<body class="bg-slate-50 font-sans min-h-screen flex flex-col justify-between">
 
-<body>
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-navy-deep text-white p-2 rounded-lg">
+                    <i data-lucide="dna" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold text-slate-800 tracking-tight">Sebastian Caro</span>
+            </div>
+            <a href="https://github.com/SebastianCaro" target="_blank" class="text-slate-600 hover:text-navy-deep flex items-center space-x-1 transition-colors">
+                <i data-lucide="github" class="w-5 h-5"></i>
+                <span class="text-sm font-medium hidden sm:inline">GitHub Profile</span>
+            </a>
+        </div>
+    </header>
 
-<h1>B-ALL Survival Analysis</h1>
+    <!-- Hero Section -->
+    <section class="bg-navy-deep text-white py-16 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(43,92,143,0.4),transparent)]"></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Bioinformatics & Data Science</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 tracking-tight">Portafolio de Análisis Estadístico</h1>
+            <p class="text-slate-300 mt-4 text-lg md:text-xl font-light max-w-2xl mx-auto">
+                Espacio dedicado a la publicación de metodologías, notebooks reproducibles y flujos de análisis de datos clínicos y moleculares.
+            </p>
+        </div>
+    </section>
 
-<p>
-This repository contains reproducible statistical analyses developed for the undergraduate thesis on pediatric B-cell acute lymphoblastic leukemia.
-</p>
+    <!-- Main Content / Notebooks Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-12 flex-grow w-full">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 flex items-center space-x-2">
+                <i data-lucide="book-open" class="text-navy-deep w-6 h-6"></i>
+                <span>Cuadernos Disponibles (Rmd)</span>
+            </h2>
+            <span class="text-sm text-slate-500 font-medium">Mostrando 1 de 1 análisis activo</span>
+        </div>
 
-<h2>Documentation</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- TARJETA 1: Kaplan-Meier Survival Analysis -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">Activo</span>
+                        <div class="text-slate-400">
+                            <i data-lucide="file-text" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 hover:text-navy-deep transition-colors">
+                        Kaplan–Meier Survival Analysis
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Ajuste de curvas de supervivencia, estimación de mediana de tiempo al evento clínico y comparaciones mediante Log-Rank y Tarone-Ware.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-0.5 rounded-full font-medium">Survival</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-0.5 rounded-full font-medium">RMarkdown</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-0.5 rounded-full font-medium">Bioestadística</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                    <span class="text-xs text-slate-400 flex items-center">
+                        <i data-lucide="calendar" class="w-3.5 h-3.5 mr-1"></i> Jun 2026
+                    </span>
+                    <!-- Apunta directamente a tu notebook en la subcarpeta -->
+                    <a href="notebooks/kaplan_meier_analysis.html" class="inline-flex items-center text-sm font-semibold text-navy-deep hover:text-blue-600 transition-colors">
+                        Ver Notebook <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
 
-<div class="card">
+            <!-- TARJETA 2: Marcador de Posición (Futuro Proyecto) -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-dashed border-slate-300 flex flex-col justify-between opacity-75 hover:opacity-100 transition-opacity">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded">En Progreso</span>
+                        <div class="text-slate-300">
+                            <i data-lucide="lock" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-400 mb-2">
+                        Differential Gene Expression
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pipeline para análisis de expresión diferencial utilizando DESeq2 en datos de secuenciación de RNA (RNA-Seq).
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-slate-100/50 text-slate-400 text-xs px-2.5 py-0.5 rounded-full font-medium">RNA-Seq</span>
+                        <span class="bg-slate-100/50 text-slate-400 text-xs px-2.5 py-0.5 rounded-full font-medium">DESeq2</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                    <span class="text-xs text-slate-400 flex items-center">
+                        <i data-lucide="clock" class="w-3.5 h-3.5 mr-1"></i> Próximamente
+                    </span>
+                    <span class="text-sm font-semibold text-slate-400 flex items-center">
+                        Bloqueado <i data-lucide="lock" class="w-4 h-4 ml-1"></i>
+                    </span>
+                </div>
+            </div>
 
-<h3>Kaplan–Meier Survival Analysis</h3>
+            <!-- TARJETA 3: Marcador de Posición (Futuro Proyecto) -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-dashed border-slate-300 flex flex-col justify-between opacity-75 hover:opacity-100 transition-opacity">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded">En Progreso</span>
+                        <div class="text-slate-300">
+                            <i data-lucide="lock" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-400 mb-2">
+                        Single-Cell RNA-Seq Clustering
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Reducción de dimensionalidad (UMAP/t-SNE) y clustering de subpoblaciones celulares utilizando Seurat.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-slate-100/50 text-slate-400 text-xs px-2.5 py-0.5 rounded-full font-medium">Single-Cell</span>
+                        <span class="bg-slate-100/50 text-slate-400 text-xs px-2.5 py-0.5 rounded-full font-medium">Seurat</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                    <span class="text-xs text-slate-400 flex items-center">
+                        <i data-lucide="clock" class="w-3.5 h-3.5 mr-1"></i> Próximamente
+                    </span>
+                    <span class="text-sm font-semibold text-slate-400 flex items-center">
+                        Bloqueado <i data-lucide="lock" class="w-4 h-4 ml-1"></i>
+                    </span>
+                </div>
+            </div>
 
-<p>
-Estimation of survival curves, Log-rank test, Tarone–Ware test and median survival.
-</p>
+        </div>
+    </main>
 
-<a href="notebooks/kaplan_meier_analysis.html">
-Open notebook →
-</a>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p class="text-sm">
+                &copy; 2026 Sebastian Caro. Todo el código estadístico y metodologías son de libre acceso.
+            </p>
+            <div class="flex space-x-6 text-sm">
+                <a href="https://github.com/SebastianCaro" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+                <span class="text-slate-700">|</span>
+                <span class="text-slate-500">Generado con R Markdown & GitHub Pages</span>
+            </div>
+        </div>
+    </footer>
 
-</div>
-
+    <!-- Inicializar Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
-
 </html>
