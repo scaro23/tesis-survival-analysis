@@ -1,4 +1,5 @@
 # B-ALL Survival Analysis
+---
 This repository contains the R scripts used in the biostatistical analysis of an undergraduate thesis.
 - 📄 Thesis language: Spanish  
 - 💻 Code and documentation: English
@@ -10,8 +11,8 @@ This repository contains the source code developed for the work entitled "Cytoge
 - **Data visualization**: To show the output data (iamges and tables) from the analysis obtained.
 ## Reproducibility
 All analyses were conducted in R. Required packages include:
-- 'survival'
-- 'survminer'
+- survival
+- survminer
 Session information (R version and package versions) can be provided upon request.
 ## Data Availability##
 Due to patient privacy restrictions, the dataset used in this study is not publicly available.
