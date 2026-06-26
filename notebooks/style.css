@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Estilos Personalizados para Reportes R Markdown (Sebastian Caro)
+   ========================================================================== */
+
+/* ==========================================
+   1. Tipografía General y Párrafos
+   ========================================== */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p, li {
+    font-size: 16px;       /* Incrementado de ~14px a 16px para mayor legibilidad */
+    line-height: 1.6;      /* Espaciado interlineal suave */
+    color: #333333;        /* Negro suave para evitar la fatiga visual */
+}
+
+/* ==========================================
+   2. Encabezados (Azul Marino)
+   ========================================== */
+h1, h2, h3, h4, h5, h6 {
+    color: #1a365d !important;       /* Azul Marino profundo y elegante */
+    font-weight: 600 !important;     /* Mayor grosor tipográfico */
+    margin-top: 1.5em;               /* Espacio superior para separar secciones */
+    margin-bottom: 0.5em;            /* Espacio inferior controlado */
+}
+
+/* Evitar que el título principal del documento (h1.title) tenga demasiado margen superior */
+h1.title {
+    margin-top: 0.5em !important;
+    color: #1a365d !important;
+}
+
+/* ==========================================
+   3. Numeración Automática de Secciones
+   ========================================== */
+/* Agrega un punto (.) después de los números de sección en el cuerpo */
+.header-section-number::after {
+    content: ".";
+}
+
+/* Agrega un punto (.) después de los números de sección en la barra lateral (TOC) */
+.tocify-item .header-section-number::after {
+    content: ".";
+}
+
+/* Espaciado entre el número y el texto del título */
+.header-section-number {
+    margin-right: 0.3em;
+}
+
+/* ==========================================
+   4. Bloques de Código (Estilo Consola de R)
+   ========================================== */
+/* Contenedor principal del bloque de código */
+pre,
+.well pre {
+    background-color: #0b1d33 !important;   /* Azul marino muy oscuro (Consola RStudio) */
+    color: #f8f8f2 !important;              /* Texto claro de alto contraste */
+    border: 1px solid #142a44 !important;
+    border-radius: 8px !important;
+    padding: 38px 16px 16px 16px !important; /* Espacio superior para la barra simulada */
+    font-family: "Fira Code", Consolas, Monaco, monospace;
+    font-size: 14px !important;
+    position: relative;                     /* Necesario para posicionar el encabezado y botones */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra suave para dar profundidad */
+}
+
+/* Barra superior simulada de la consola de R */
+pre::before {
+    content: "R Console";
+    font-family: "Fira Code", Consolas, Monaco, monospace;
+    font-size: 11px !important;
+    color: #517196 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #071526 !important;   /* Fondo ligeramente más oscuro para la barra */
+    padding: 8px 16px !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid #142a44;
+}
+
+/* Limpiar estilos heredados de etiquetas 'code' dentro de los bloques pre */
+code {
+    font-family: "Fira Code", Consolas, Monaco, monospace;
+    background-color: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+}
+
+/* ==========================================================================
+   Sobrescritura de Colores de Sintaxis (Sintaxis RStudio)
+   Compatibilidad dual: Pandoc Native Highlight y Highlight.js
+   ========================================================================== */
+
+/* A. Comentarios (#...) -> Azul-grisáceo brillante muy legible */
+pre code span.co,
+pre code span.hljs-comment,
+pre code span.comment { 
+    color: #7a93a5 !important; 
+    font-style: italic !important; 
+}
+
+/* B. Funciones básicas y creadas (survfit, Surv) -> Cyan */
+pre code span.fu,
+pre code span.hljs-function,
+pre code span.function,
+pre code span.hljs-title,
+pre code span.title { 
+    color: #8be9fd !important; 
+}
+
+/* C. Funciones del sistema e integradas (library, require, summary, cat) -> Cyan brillante */
+pre code span.bu,
+pre code span.hljs-built_in,
+pre code span.built_in {
+    color: #8be9fd !important;
+    font-weight: 500 !important;
+}
+
+/* D. Palabras clave y control de flujo (if, else, for, library si aplica) -> Fucsia */
+pre code span.kw,
+pre code span.cf,
+pre code span.hljs-keyword,
+pre code span.keyword { 
+    color: #ff79c6 !important; 
+    font-weight: bold !important; 
+}
+
+/* E. Cadenas de texto ("npg", "time") -> Amarillo suave */
+pre code span.st,
+pre code span.hljs-string,
+pre code span.string { 
+    color: #f1fa8c !important; 
+}
+
+/* F. Variables y nombres de objetos -> Blanco hueso */
+pre code span.va,
+pre code span.hljs-variable,
+pre code span.variable { 
+    color: #f8f8f2 !important; 
+}
+
+/* G. Números, booleanos y constantes (TRUE, FALSE, 1, 2) -> Púrpura */
+pre code span.dv, 
+pre code span.fl, 
+pre code span.cn,
+pre code span.hljs-number,
+pre code span.hljs-literal,
+pre code span.number,
+pre code span.literal { 
+    color: #bd93f9 !important; 
+}
+
+/* H. Operadores de asignación y lógicos (<- , ~, +, *) -> Fucsia */
+pre code span.op,
+pre code span.hljs-operator,
+pre code span.operator { 
+    color: #ff79c6 !important; 
+}
+
+/* ==========================================
+   Estilo para el código inline `ejemplo` dentro de los párrafos
+   ========================================== */
+p code, li code {
+    background-color: #f4f7fa !important;   /* Fondo gris-azul muy claro para código inline */
+    color: #1a365d !important;              /* Azul marino para resaltar de forma elegante */
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    border: 1px solid #e1e8ed !important;
+    font-size: 90% !important;
+}
+
+/* ==========================================
+   5. Botones de Mostrar/Ocultar Código (Show/Hide)
+   ========================================== */
+/* Se incrementa la especificidad de Bootstrap usando .btn.code-folding-btn */
+.btn.code-folding-btn {
+    background-color: #1a365d !important;   /* Fondo Azul Marino para contrastar */
+    color: #1a365d !important;              /* Texto Blanco totalmente visible */
+    border: 1px solid #1a365d !important;
+    border-radius: 4px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    padding: 4px 12px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Efecto hover interactivo para el botón */
+.btn.code-folding-btn:hover {
+    background-color: #2b5c8f !important;   /* Azul un poco más claro al pasar el mouse */
+    border-color: #2b5c8f !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================
+   6. Bloques de Notas y Advertencias (Citas)
+   ========================================== */
+blockquote {
+    border-left: 5px solid #1a365d !important; /* Borde izquierdo azul marino */
+    background-color: #f7fafc !important;      /* Fondo gris azulado muy suave */
+    padding: 12px 18px !important;
+    margin: 1.5em 0 !important;
+    font-size: 0.95em !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+/* Asegurar que los párrafos dentro de blockquote hereden un tamaño agradable */
+blockquote p {
+    font-size: 15px !important;
+    color: #4a5568 !important;
+}
