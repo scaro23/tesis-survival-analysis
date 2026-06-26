@@ -10,13 +10,13 @@ This repository contains the source code developed for the work entitled "Cytoge
 - **Data visualization**: To show the output data (iamges and tables) from the analysis obtained.
 ## Reproducibility
 All analyses were conducted in R. Required packages include:
-- survival
-- survminer
+- 'survival'
+- 'survminer'
 Session information (R version and package versions) can be provided upon request.
-## Data Availability
+## Data Availability##
 Due to patient privacy restrictions, the dataset used in this study is not publicly available.
 ## Citation
-If you use this repository, please cite:
+**If you use this repository, please cite:**  
 Caro Retamozo, S. (2026). 
 Survival Analysis Pipeline for B-Cell Acute Lymphoblastic Leukemia (Kaplan-Meier and Cox Models) 
 (Version 1.0.2). Zenodo. https://doi.org/10.5281/zenodo.19260913
