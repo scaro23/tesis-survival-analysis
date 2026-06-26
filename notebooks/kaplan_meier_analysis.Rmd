@@ -3,6 +3,7 @@ title: "Kaplan–Meier Survival Analysis"
 author: "Sebastian Caro"
 output:
   html_document:
+    theme: flatly
     toc: true
     toc_float: true
     number_sections: true
