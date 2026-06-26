@@ -16,6 +16,7 @@ This notebook demonstrates the workflow used to perform Kaplan–Meier survival 
 # Load required packages
 
 ```{r setup, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
 library(tidyr)
 library(flextable)
 library(officer)
